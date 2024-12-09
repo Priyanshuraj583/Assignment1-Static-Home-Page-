@@ -1,0 +1,165 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures full viewport height */
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    /* margin-top: 5%; */
+}
+nav{
+    height:15%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    z-index: 2;
+    position:fixed;
+    top: 0;
+    left:0
+    /* justify-content: space-between; */
+}
+#leftnav{
+    height: 100%;
+    width:15%;
+    /* background-color: aquamarine; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding-left: 10px;
+
+}
+#leftnav>img{
+    width:50px;
+    height: 50px;
+    border-radius: 100%;
+    /* padding-left: 10px; */
+}
+#rightnav{
+    height: 100%;
+    width: 85%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+#rightnav>ul{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content:space-evenly;
+}
+.nav-button>a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-button{
+    padding: 10px;
+
+}
+.nav-button:hover {
+    background-color: white;
+    /* color: rgb(0, 0, 0); */
+    border-radius: 20%;
+}
+.nav-button:hover a {
+    color: rgb(0, 0, 0); /* Black */
+}
+
+main{
+    flex: 1;
+    height:100%;
+    width:100%;
+    margin-top: 5%;
+    background-color: rgb(0, 0, 0);
+    /* display: flex; */
+    justify-content: center;
+    /* padding-top: 10px; */
+    scroll-behavior:auto;
+   
+}
+.msg{
+    background-image:url("./library_img.jpg");
+    background-size:contain;
+width:100%;
+height:90vh;
+scroll-behavior: auto;
+/* margin: auto; */
+/* background-color:cadetblue; */
+/* padding-top: 10px; */
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+/* .msg>img{
+
+} */
+
+#wlcmtxt{
+    margin: auto;
+    height: 60%;
+    width: 50%;
+/* position: absolute; */
+/* left: 25%; */
+    /* background-color:black; */
+    color: white;
+    /* background: rgb(0, 0, 0); Fallback color */
+  background: rgba(0, 0, 0, 0.6); /* Black background with 0.5 opacity */;
+   padding-top: 30px;
+  /*padding-left: 30px;
+  padding-right: 30px; */
+  font-size: larger;
+}
+#wlcmtxt>q{
+    font-size: larger;
+}
+.entry{
+    color: white;
+    height: 40%; /* Adjust the height as needed */
+    /* overflow-y: auto; Enables vertical scrolling */
+    /* margin: 10px auto; Centering with some space around */
+    padding: 10px; /* Optional for better visual spacing */
+    background-color: rgba(0, 0, 0, 0.6); /* Consistent with the design */
+    border-radius: 10px; /* Optional for aesthetics */
+    width: 100%; /* Adjust width for better spacing */
+}
+.entry-item{
+    /* background-color:coral; */
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 2px;
+    border-radius: 20px;
+    padding: 10px;
+}
+h1{
+    color: white;
+    text-align: center;
+    scroll-margin-top: 82px;
+}
+.entry-item h3{
+    color:rgb(199,81,19) ;
+}
+.sub-detail{
+    color: #cc9b58;
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 0.1); /* Optional styling */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: relative; /* Default behavior */
+}
+
+
