@@ -25,6 +25,28 @@ nav{
     left:0
     /* justify-content: space-between; */
 }
+#hamburger {
+    display: none; /* Hidden on larger screens */
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    position: absolute; /* Position it relative to the nav container */
+    top: 30%; /* Distance from the top */
+    right: 5%; /* Distance from the right */
+    z-index: 1001;
+    /* background-color: aqua; */
+    height: 30%;
+    width: 10%;
+}
+
+#hamburger div {
+    width: 60%;
+    height: 20%;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+
 #leftnav{
     height: 100%;
     width:15%;
@@ -32,13 +54,14 @@ nav{
     display: flex;
     /* justify-content: center; */
     align-items: center;
-    padding-left: 10px;
+    padding-left: 2%;
 
 }
 #leftnav>img{
-    width:50px;
-    height: 50px;
-    border-radius: 100%;
+    width:35%;
+    height: 50%;
+    border-radius: 50%;
+
     /* padding-left: 10px; */
 }
 #rightnav{
@@ -76,6 +99,7 @@ nav{
     color: rgb(0, 0, 0); /* Black */
 }
 
+
 main{
     flex: 1;
     height:100%;
@@ -93,62 +117,65 @@ main{
     background-size:contain;
 width:100%;
 height:90vh;
-scroll-behavior: auto;
-/* margin: auto; */
-/* background-color:cadetblue; */
-/* padding-top: 10px; */
+
 position: relative;
 display: flex;
 justify-content: center;
 align-items: center;
 }
-/* .msg>img{
 
-} */
 
 #wlcmtxt{
     margin: auto;
     height: 60%;
     width: 50%;
-/* position: absolute; */
-/* left: 25%; */
-    /* background-color:black; */
+
     color: white;
     /* background: rgb(0, 0, 0); Fallback color */
-  background: rgba(0, 0, 0, 0.6); /* Black background with 0.5 opacity */;
-   padding-top: 30px;
-  /*padding-left: 30px;
-  padding-right: 30px; */
+  background: rgba(0, 0, 0, 0.7); /* Black background with 0.5 opacity */;
+   padding: 2%;
+ 
   font-size: larger;
 }
 #wlcmtxt>q{
     font-size: larger;
+}
+#Catalog{
+    margin: 2%;
 }
 .entry{
     color: white;
     height: 40%; /* Adjust the height as needed */
     /* overflow-y: auto; Enables vertical scrolling */
     /* margin: 10px auto; Centering with some space around */
-    padding: 10px; /* Optional for better visual spacing */
+    padding: 1%; /* Optional for better visual spacing */
     background-color: rgba(0, 0, 0, 0.6); /* Consistent with the design */
-    border-radius: 10px; /* Optional for aesthetics */
+    /* border-radius: 10px; Optional for aesthetics */
     width: 100%; /* Adjust width for better spacing */
 }
 .entry-item{
     /* background-color:coral; */
     background-color: rgba(255, 255, 255, 0.1);
-    margin: 2px;
-    border-radius: 20px;
-    padding: 10px;
+    margin: 1%;
+    border-radius: 5%;
+    padding: 2%;
 }
+
+
 h1{
     color: white;
     text-align: center;
-    scroll-margin-top: 82px;
+    scroll-margin-top:15vh;
 }
 .entry-item h3{
     color:rgb(199,81,19) ;
+    display: inline-block;
+    padding-bottom: 1%;
 }
+.entry-item>ul{
+    list-style-type: none;
+}
+
 .sub-detail{
     color: #cc9b58;
 }
@@ -157,9 +184,63 @@ footer {
     background-color: rgba(255, 255, 255, 0.1); /* Optional styling */
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 2%;
     width: 100%;
     position: relative; /* Default behavior */
+}
+
+@media (max-width: 768px) {
+    
+    nav{
+        display:relative;
+    }
+    #leftnav>img{
+        width:80%;
+    height: 45%;
+    border-radius: 50%;
+    }
+    #wlcmtxt{
+        margin: auto;
+        height: 60%;
+        width: 70%;
+        font-size: 100%;
+    }
+    .msg{
+        height: 100vh;
+    }
+
+    #rightnav{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: black;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        flex-direction: column;
+        align-items: center;
+        transition: height 0.3s ease;
+        z-index: 1000;
+    }
+
+    #rightnav ul{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    #rightnav[data-visible="true"] {
+        height: 165%; /* Adjust this value as per the number of menu items */
+    }
+    #rightnav ul li {
+        margin: 10px 0;
+    }
+
+    #hamburger {
+        display: flex;
+        padding-top: 2%;
+       
+    }
 }
 
 

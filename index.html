@@ -1,104 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
     <link rel="stylesheet" href="./style.css">
+    <script defer src="./index.js"></script>
 </head>
+
 <body id="top">
     <nav>
         <div id="leftnav">
             <img src="./lib.jpg">
         </div>
-        <div id="rightnav">
+        
+        <div id="rightnav" data-visible="false">
             <ul>
                 <li class="nav-button"><a href="#top">Home</a></li>
                 <li class="nav-button"><a href="#Catalog">Catalog</a></li>
                 <li class="nav-button"><a href="#Contact-us">Contact Us</a></li>
             </ul>
         </div>
+        <div id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
     </nav>
     <main>
         <section class="msg">
             <!-- <img src="./library_img.jpg" alt=""> -->
             <div id="wlcmtxt">
-            <q>A reader lives a thousand lives before he dies. The man who never reads lives only one.</q>
-            <br><pre>                 <br>-George R.R. Martin</pre>
-            <br><br>
-            <p>Welcome to our Online Library Portal! Here, every book opens the door to a new life, a new journey, and endless adventures. Immerse yourself in stories that transport you, ideas that inspire you, and knowledge that empowers you. Begin your exploration today and let the pages unfold magic. Happy reading!</p>
+                <q>A reader lives a thousand lives before he dies. The man who never reads lives only one.</q>
+                <br>
+                <pre>                 <br>-George R.R. Martin</pre>
+                <br><br>
+                <p>Welcome to our Online Library Portal! Here, every book opens the door to a new life, a new journey,
+                    and endless adventures. Immerse yourself in stories that transport you, ideas that inspire you, and
+                    knowledge that empowers you. Begin your exploration today and let the pages unfold magic. Happy
+                    reading!</p>
             </div>
         </section>
         <h1 id="Catalog">Catalog</h1>
         <section class="entry">
-            <details class="entry-item"><summary><h3>"Sapiens: A Brief History of Humankind"</h3><br> by <em>Yuval Noah Harari</em><br><br>
-               <span class="sub-detail"> Publication Date:</span> 2011<br>
-               <span class="sub-detail">Description:</span> A compelling overview of human history, exploring how biology, culture, and technology have shaped our species and societies.
-            </summary><ul> <span class="sub-detail">Additional Details:</span>
-            <li> Genre: History, Anthropology
-               
-                </li>
-            <li> Translated into more than 50 languages</li>
-            <li>Combines science, history, and philosophy</li>
-               </ul></details>
-            <details class="entry-item"><summary> <h3>"The Alchemist"</h3><br> by <em>Paulo Coelho</em><br>
-                <span class="sub-detail">Publication Date:</span> 1988<br>
-                <span class="sub-detail">Description:</span> A philosophical novel about a young shepherd named Santiago who embarks on a journey to discover his personal legend and fulfill his dreams. It’s a timeless tale of adventure, destiny, and self-discovery.</summary>
-                <ul ><span class="sub-detail">Additional Details:</span>
-                   <li>Genre: Fiction, Inspirational
-                    
+            <details class="entry-item">
+                <summary>
+                    <h3>"Sapiens: A Brief History of Humankind"</h3><br> by <em>Yuval Noah Harari</em><br><br>
+                    <span class="sub-detail"> Publication Date:</span> 2011<br><br>
+                    <span class="sub-detail">Description:</span> A compelling overview of human history, exploring how
+                    biology, culture, and technology have shaped our species and societies.
+                </summary>
+                <br>
+                <ul> <span class="sub-detail">Additional Details:</span>
+                    <li> Genre: History, Anthropology
+
                     </li>
-                   <li>Language: Originally written in Portuguese</li>
-                   <li>Bestseller: Sold over 65 million copies worldwide</li> </ul></details>
-            <details class="entry-item"><summary><h3>"Atomic Habits"</h3> <br>by <em>James Clear</em><br>
-                <span class="sub-detail">Publication Date:</span> 2018<br>
-                <span class="sub-detail">Description:</span> A practical guide to building good habits and breaking bad ones through small, incremental changes. It provides actionable strategies rooted in behavioral science.</summary>
+                    <li> Translated into more than 50 languages</li>
+                    <li>Combines science, history, and philosophy</li>
+                </ul>
+            </details>
+            <details class="entry-item">
+                <summary>
+                    <h3>"The Alchemist"</h3><br> by <em>Paulo Coelho</em><br><br>
+                    <span class="sub-detail">Publication Date:</span> 1988<br><br>
+                    <span class="sub-detail">Description:</span> A philosophical novel about a young shepherd named
+                    Santiago who embarks on a journey to discover his personal legend and fulfill his dreams. It’s a
+                    timeless tale of adventure, destiny, and self-discovery.
+                </summary><br>
                 <ul><span class="sub-detail">Additional Details:</span>
-                   <li> Genre: Self-help, Productivity
-                    
-                   </li>
-                   <li>Key Feature: Includes frameworks like the Habit Loop and the 1% Rule</li>
-                   <li> Highly praised for its clarity and simplicity</li></ul></details>
-            <details class="entry-item"><summary><h3>"Man’s Search for Meaning"</h3><br> by <em>Viktor E. Frankl</em><br>
-                <span class="sub-detail"> Publication Date:</span> 1946<br>
-                    <span class="sub-detail">Description:</span> Written by a Holocaust survivor and psychiatrist, this book explores the search for purpose and meaning in life, even in the face of unimaginable suffering.</summary>
-                        <ul><span class="sub-detail">Additional Details:</span>
-                            <li>Genre: Memoir, Psychology</li>
-                            <li>Language: Translated into over 24 languages</li>
-                            <li> Profound insight into the human spirit and resilience</li>
-                    
-                    
-                   </ul></details>
-            <details class="entry-item"><summary><h3>"Meditations"</h3><br> by <em>Marcus Aurelius</em><br>
-                <span class="sub-detail">Publication Date:</span> Around 161-180 CE (Modern English editions vary)<br>
-                <span class="sub-detail">Description:</span> A collection of personal writings by the Roman Emperor, offering timeless wisdom on stoicism, self-discipline, and leadership.</summary>
+                    <li>Genre: Fiction, Inspirational
+
+                    </li>
+                    <li>Language: Originally written in Portuguese</li>
+                    <li>Bestseller: Sold over 65 million copies worldwide</li>
+                </ul>
+            </details>
+            <details class="entry-item">
+                <summary>
+                    <h3>"Atomic Habits"</h3> <br>by <em>James Clear</em><br><br>
+                    <span class="sub-detail">Publication Date:</span> 2018<br><br>
+                    <span class="sub-detail">Description:</span> A practical guide to building good habits and breaking
+                    bad ones through small, incremental changes. It provides actionable strategies rooted in behavioral
+                    science.
+                </summary><br>
+                <ul><span class="sub-detail">Additional Details:</span>
+                    <li> Genre: Self-help, Productivity
+
+                    </li>
+                    <li>Key Feature: Includes frameworks like the Habit Loop and the 1% Rule</li>
+                    <li> Highly praised for its clarity and simplicity</li>
+                </ul>
+            </details>
+            <details class="entry-item">
+                <summary>
+                    <h3>"Man’s Search for Meaning"</h3><br> by <em>Viktor E. Frankl</em><br><br>
+                    <span class="sub-detail"> Publication Date:</span> 1946<br><br>
+                    <span class="sub-detail">Description:</span> Written by a Holocaust survivor and psychiatrist, this
+                    book explores the search for purpose and meaning in life, even in the face of unimaginable
+                    suffering.
+                </summary>
+                <br>
+                <ul><span class="sub-detail">Additional Details:</span>
+                    <li>Genre: Memoir, Psychology</li>
+                    <li>Language: Translated into over 24 languages</li>
+                    <li> Profound insight into the human spirit and resilience</li>
+
+
+                </ul>
+            </details>
+            <details class="entry-item">
+                <summary>
+                    <h3>"Meditations"</h3><br> by <em>Marcus Aurelius</em><br><br>
+                    <span class="sub-detail">Publication Date:</span> Around 161-180 CE (Modern English editions
+                    vary)<br><br>
+                    <span class="sub-detail">Description:</span> A collection of personal writings by the Roman Emperor,
+                    offering timeless wisdom on stoicism, self-discipline, and leadership.
+                </summary>
+                <br>
                 <ul><span class="sub-detail">Additional Details:</span>
                     <li> Genre: Philosophy, Classics</li>
                     <li>Language: Originally written in Greek</li>
                     <li> A cornerstone of Western philosophical thought</li>
-                   
-                    
-                   </ul></details>
-            <details class="entry-item"><summary><h3>"Thinking, Fast and Slow" </h3><br>by <em>Daniel Kahneman</em><br>
-                <span class="sub-detail">Publication Date:</span> 2011<br>
-                <span class="sub-detail">Description: </span>A deep dive into how our minds work, explaining the two systems of thought—fast, intuitive thinking and slow, deliberate reasoning—and their impact on decision-making.</summary>
+
+
+                </ul>
+            </details>
+            <details class="entry-item">
+                <summary>
+                    <h3>"Thinking, Fast and Slow" </h3><br>by <em>Daniel Kahneman</em><br><br>
+                    <span class="sub-detail">Publication Date:</span> 2011<br><br>
+                    <span class="sub-detail">Description: </span>A deep dive into how our minds work, explaining the two
+                    systems of thought—fast, intuitive thinking and slow, deliberate reasoning—and their impact on
+                    decision-making.
+                </summary>
+                <br>
                 <ul><span class="sub-detail">Additional Details:</span>
-                   <li>Genre: Psychology, Behavioral Economics</li>
-                   <li>Written by a Nobel laureate in Economic Sciences</li>
-                   <li>Provides insights into biases and heuristics</li>
-                    
-                    
-                    </ul></details>
+                    <li>Genre: Psychology, Behavioral Economics</li>
+                    <li>Written by a Nobel laureate in Economic Sciences</li>
+                    <li>Provides insights into biases and heuristics</li>
+
+
+                </ul>
+            </details>
         </section>
     </main>
     <footer id="Contact-us">
         <address>
-            Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br> 
+            Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
             Visit us at:<br>
             Example.com<br>
             Box 564, Disneyland<br>
             USA
-            </address>
+        </address>
     </footer>
 </body>
+
 </html>
